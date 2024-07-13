@@ -20,6 +20,7 @@ export default function ProductBox({ product }) {
                 <span>
                   <i className="bi bi-currency-dollar"></i> {product.price}
                 </span>
+
                 <p>
                   <i className="bi bi-bar-chart-line-fill"></i>
                   {product.sold_item} Item Sold
