@@ -1,0 +1,7 @@
+.content-wrapper h4 {
+  color: var(--green);
+}
+.side_img img {
+  width: 100%;
+  height: auto;
+}

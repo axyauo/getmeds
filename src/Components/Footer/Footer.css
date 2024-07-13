@@ -1,0 +1,116 @@
+.footer {
+  background: black;
+  padding: 2em 0;
+  color: white;
+}
+.intro_footer p {
+  margin: 2em 0;
+  text-align: justify;
+}
+.footer_img img {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+}
+.footer_h3 {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer_h3::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: var(--color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin: 10px 0;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1em;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.footer ul li a:hover {
+  color: var(--color);
+  transform: scale(1.05);
+}
+
+.footer ul li a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.footer ul li a:hover::before {
+  width: 20%;
+}
+.contact-us p {
+  margin: 10px 0;
+}
+
+.contact-us p i {
+  margin-right: 10px;
+  color: white;
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.contact-us a:hover {
+  color: var(--color);
+  text-decoration: underline;
+  width: fit-content;
+}
+.quick-links,
+.categories,
+.contact-us {
+  animation: fadeIn 1s ease-out;
+}
+.quick-links ul li,
+.categories ul li {
+  font-weight: 700;
+}
+.quick-links ul,
+.categories ul {
+  padding: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.f-sm:hover a {
+  width: 15% !important;
+}

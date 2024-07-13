@@ -1,0 +1,86 @@
+@keyframes expand {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes collapse {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+.accordion-collapse.collapse.show {
+  animation: expand 0.4s ease-in-out;
+}
+
+.accordion-collapse.collapse {
+  animation: collapse 0.4s ease-in-out;
+}
+.accordion-collapse {
+  transition: height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.accordion-collapse.collapse.show {
+  opacity: 1;
+}
+
+.accordion-collapse.collapse {
+  opacity: 0;
+}
+.accordion {
+  border: none;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.accordion-header {
+  border-bottom: 0;
+}
+
+.accordion-button {
+  margin-bottom: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--color);
+}
+
+.accordion-button:hover {
+  background: var(--color);
+  color: white;
+}
+
+.accordion-body {
+  padding: 20px;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--green) !important;
+}
+.accordion-button:not(.collapsed) {
+  background: var(--color) !important;
+  border: var(--color) !important;
+  color: white !important;
+}
+.inner_post h4 {
+  color: var(--green) !important;
+  font-size: 28px;
+}

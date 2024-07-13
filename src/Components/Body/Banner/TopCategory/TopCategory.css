@@ -1,0 +1,28 @@
+.top_category {
+  list-style: none;
+  padding: 0;
+}
+.top_category li a {
+  color: black !important;
+}
+.top_category li:hover a {
+  color: var(--green) !important;
+  font-weight: 600;
+}
+
+.top_category li {
+  background: #e6e6e6;
+  color: black;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+.top_category_heading {
+  background: var(--color) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 20px;
+}
+.top_category_heading h2 {
+  font-size: 24px;
+  margin: 0;
+}

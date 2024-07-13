@@ -1,0 +1,35 @@
+.testimonial {
+  margin: 2em 1em;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 20px 10px;
+}
+.testi_img img {
+  width: 20%;
+  border-radius: 100%;
+  margin: 1em auto;
+}
+.logo_imgg i {
+  position: absolute;
+  top: -7%;
+  left: 2%;
+  font-size: 80px;
+  color: #aeaeae;
+}
+.testimonial span {
+  color: #858585;
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonial h4 {
+  color: var(--color);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: "bootstrap-icons" !important;
+}
+.testimonial p {
+  font-size: 16px;
+  color: #6c6c6c;
+}

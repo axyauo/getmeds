@@ -1,0 +1,86 @@
+.contact_section ul li {
+  padding-right: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact_section ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 60px;
+  flex-wrap: wrap;
+}
+.contact_section {
+  margin: 5px 0px;
+}
+.account-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 5px 0px;
+}
+.account-title {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.social-icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon i {
+  font-size: 18px;
+}
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.instagram {
+  background: linear-gradient(to right, #833ab4, #e1306c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media (max-width: 576px) {
+  .contact_section {
+    display: none;
+  }
+  .account-title {
+    display: none;
+  }
+}
+@media (min-width: 577px) {
+  .small-scrn {
+    display: none;
+  }
+}
+.small-scrn img {
+  width: 100%;
+  height: auto;
+}
+.small-scrn {
+  background: white;
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+}

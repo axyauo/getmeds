@@ -1,0 +1,126 @@
+.bg-color {
+  background-color: var(--color) !important;
+}
+.nav-link {
+  font-weight: 600 !important;
+  font-size: 17px !important;
+}
+.another_list i {
+  color: white;
+  padding-right: 20px;
+}
+
+.another_list {
+  display: flex;
+  box-shadow: 1px 1px 5px 0px;
+  padding: 15px 30px;
+}
+.mobile_view {
+  display: flex;
+}
+.mobile_view .af-cart-amount {
+  position: relative;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 2px;
+  margin-left: -10px;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 2;
+}
+.mobile_view span.af-cart-amount:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-right: 7px solid #fdb907;
+  top: calc(50% - 5px);
+  right: 100%;
+}
+.mobile_view .gbl-bdge-bck-c {
+  background: #ffc107 !important;
+}
+.mobile_view .gbl-bdge-bck-c {
+  color: #23282d !important;
+}
+
+.mobile_view .bi-search {
+  padding-left: 10px;
+  color: white;
+}
+@media (min-width: 769px) {
+  .mobile_view {
+    display: none !important;
+  }
+}
+/* MedicineListSidebar.css */
+
+.medicine-list-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Start off-screen */
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.medicine-list-sidebar.open {
+  right: 0; /* Slide in when open */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+.close-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.medicine-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 100vh;
+}
+.sidebar-header h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.medicine-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+.medicine-list li a {
+  color: var(--color) !important;
+}
+
+.medicine-list li:hover {
+  background-color: var(--color);
+}
+.medicine-list li:hover a {
+  color: #f0f0f0 !important;
+}
+
+@media (max-width: 768px) {
+  .medicine-list-sidebar {
+    width: 100%;
+    max-width: 300px;
+  }
+}

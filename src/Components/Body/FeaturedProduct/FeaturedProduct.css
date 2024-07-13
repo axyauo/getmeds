@@ -1,0 +1,22 @@
+.featured_topic p {
+  color: #615f5f;
+}
+.featured_topic h5 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+
+.featured_topic i {
+  font-size: 40px;
+  padding-right: 10px;
+  color: var(--green);
+}
+.featured_topic {
+  display: flex;
+  border-right: 1px solid #b8afaf;
+}
+.overlay-content h4 {
+  color: white;
+  font-weight: 800;
+}
